@@ -14,7 +14,7 @@ git clone https://github.com/Lawliet-Chan/dbc-substrate.git
 cd dbc-substrate/bin/node/cli && cargo build --release
 
 ## 运行
-### 清空区块链存储
+### 清空区块链存储 (每次启动链之前都要执行此操作)
 cd ~/dbc-substrate/ && ./target/release/substrate purge-chain --dev -y
 ### 启动区块链
 cd ~/dbc-substrate/ && ./target/release/substrate --dev
