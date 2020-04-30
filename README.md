@@ -15,6 +15,11 @@ cd dbc-substrate/bin/node/cli && cargo build --release
 
 ## 运行
 ### 清空区块链存储
-./target/release/substrate purge-chain --dev -y
+cd ~/dbc-substrate/ && ./target/release/substrate purge-chain --dev -y
 ### 启动区块链
-./target/release/substrate --dev
+cd ~/dbc-substrate/ && ./target/release/substrate --dev
+
+## 打开前端页面
+在浏览器里输入 https://polkadot.js.org/apps/#/settings?rpc=ws://127.0.0.1:9944
+点击左侧栏中的 `Transfer` 按钮即可看见
+
